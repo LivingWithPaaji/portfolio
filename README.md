@@ -19,7 +19,7 @@ Welcome to my personal portfolio website! This project showcases my skills, expe
 - **About Me Section**: Detailed information about my professional background and interests.
 - **Projects Showcase**: Dedicated section to display my key projects with descriptions, videos, and live demos/GitHub links.
 - **Skills Section**: Comprehensive list of my technical skills categorized for clarity.
-- **Contact Form**: Seamless email communication powered by EmailJS.
+- **Contact Form**: Seamless email communication powered by Formspree.
 - **Resume Download**: Easily accessible link to download my CV.
 - **Social Links**: Quick access to my professional social media profiles.
 
@@ -31,7 +31,7 @@ Welcome to my personal portfolio website! This project showcases my skills, expe
 - **Emotion (styled-components)**: For styling React components with CSS-in-JS.
 - **Framer Motion**: A production-ready motion library for React.
 - **React Router DOM**: For declarative routing in React applications.
-- **EmailJS**: For handling contact form submissions.
+- **Formspree**: For handling contact form submissions.
 
 ## Getting Started
 
@@ -56,13 +56,11 @@ Follow these instructions to get a copy of the project up and running on your lo
     # or yarn install
     ```
 
-3. **Create a `.env` file in the root directory** with your EmailJS credentials:
-    ```
-    VITE_EMAILJS_SERVICE_ID=your_service_id
-    VITE_EMAILJS_TEMPLATE_ID=your_template_id
-    VITE_EMAILJS_PUBLIC_KEY=your_public_key
-    ```
-    _Replace the placeholder values with your actual EmailJS credentials._
+3. **Set up Formspree for the Contact Form:**
+    *   Go to [https://formspree.io/](https://formspree.io/) and sign up/log in.
+    *   Create a new form to get your unique endpoint URL (e.g., `https://formspree.io/f/your-unique-id`).
+    *   Open `src/pages/Contact.jsx` and update the `action` attribute of the `<form>` tag with your Formspree endpoint URL.
+    *   Ensure the `name` attributes of your form inputs (`name`, `email`, `subject`, `message`) match what you expect to receive in your email.
 
 ### Running the Application
 
