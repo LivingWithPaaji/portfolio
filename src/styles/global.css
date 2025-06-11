@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&family=Newsreader:wght@400;500;600;700&display=swap');
+
+/* global.css */
+
+:root {
+  --background-color: #1c1c1c;
+  --text-color: #ffffff;
+  --primary-color: #2e0854;
+  --secondary-color: #9370db;
+  --gray-bg: #a9a9a9;
+  --accent-color: #1e90ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Extra for mobile responsiveness */
+@media (max-width: 768px) {
+  .responsive-text {
+    font-size: 1.25rem;
+  }
+}
+
+/* Gradient for GridBoxes */
+.grid-gradient {
+  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+}
+
+/* Underlined link effect */
+.underlined {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+}
