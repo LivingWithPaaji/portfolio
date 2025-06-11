@@ -173,7 +173,7 @@ function App() {
               <NavLink to="/contact">Contact Me</NavLink>
             </NavLinkWrapper>
             <NavLinkWrapper whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-              <DownloadLink href="/resume.pdf" download="resume.pdf">
+              <DownloadLink href="/Resume.pdf" download="resume.pdf">
                 Resume/CV
               </DownloadLink>
             </NavLinkWrapper>
